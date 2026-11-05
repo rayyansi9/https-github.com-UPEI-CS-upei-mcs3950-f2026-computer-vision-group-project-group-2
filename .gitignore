@@ -1,0 +1,64 @@
+# ─────────────────────────────────────────────────────────────
+# MCS 3950 — group project
+# ─────────────────────────────────────────────────────────────
+
+# Imagery. Large, and its redistribution is restricted — do not commit it.
+# Commit code, configuration, and small result artefacts instead.
+#
+# Note the pattern: `data/*` rather than `data/`. Git cannot re-include a file
+# whose parent directory is excluded, so excluding the directory outright would
+# make the two negations below impossible and the folder would not clone at all.
+data/*
+!data/.gitkeep
+!data/README.md
+*.tif
+*.tiff
+*.jp2
+*.ecw
+*.sid
+*.img
+*.HEIC
+
+# Large rasters anywhere in the tree. If you need to commit a small figure,
+# put it in results/ and force-add it:  git add -f results/figure1.png
+*.png
+*.jpg
+*.jpeg
+!results/**
+!docs/**
+
+# Model weights and checkpoints
+*.pt
+*.pth
+*.h5
+*.ckpt
+*.onnx
+checkpoints/
+runs/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.Python
+*.egg-info/
+
+# Jupyter — strip outputs before committing where you can; a notebook full of
+# embedded images makes diffs unreadable and bloats the repository.
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# Environment and secrets — never commit these
+.env
+*.key
+*.pem
+credentials.json
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*~

@@ -1,0 +1,33 @@
+# MCS 3950 group project — Python dependencies
+#
+# Everything here is already installed on Google Colab. You only need this file
+# if you run the pipeline locally, or if you add a package Colab does not have.
+#
+#     pip install -r requirements.txt
+#
+# Keep it current: if you `pip install` something and it ends up in the
+# pipeline, add it here in the same commit. A requirements.txt that does not
+# match the code is worse than none, because it fails silently on a teammate's
+# machine and they assume the problem is theirs.
+
+numpy>=1.24
+opencv-python>=4.8
+matplotlib>=3.7
+scikit-image>=0.21
+scipy>=1.10
+
+# Notebooks
+jupyter>=1.0
+ipykernel>=6.25
+
+# ── Deep learning ────────────────────────────────────────────────────────────
+# PyTorch is deliberately NOT pinned here. The right wheel depends on your
+# platform and whether you have CUDA, so a version that works for one teammate
+# will fail for another. Get the correct command from pytorch.org/get-started,
+# run it, then record the version you actually installed:
+#
+#     torch==<the version you got>
+#     torchvision==<the version you got>
+
+# ── Add yours below ──────────────────────────────────────────────────────────
+# e.g. rasterio, geopandas, ultralytics, segment-anything

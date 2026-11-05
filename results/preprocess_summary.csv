@@ -1,0 +1,11 @@
+site,year,height,width,nodata_pct,valid_ha
+stratford,1935,3000,3400,6.0,958.8
+stratford,1958,3000,3400,6.0,958.8
+stratford,1968,3000,3400,6.0,958.8
+stratford,2000,3000,3400,0.0,1020.0
+stratford,2020,3000,3400,1.2,1008.2
+charlottetown,1935,6000,8000,23.2,3687.9
+charlottetown,1958,6000,8000,45.0,2639.6
+charlottetown,1968,6000,8000,23.2,3687.9
+charlottetown,2000,6000,8000,0.0,4800.0
+charlottetown,2020,6000,8000,9.4,4350.9
