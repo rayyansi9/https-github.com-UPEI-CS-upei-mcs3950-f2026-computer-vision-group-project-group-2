@@ -185,4 +185,4 @@ is not.
 |---|---|---|
 | ChatGPT | Revising proposal wording and LaTeX formatting | Revised proposal in `docs/` |
 | Claude Code | Summarising the proposal into this README and restructuring its sections | `README.md` (Nov 4) |
-| Claude Code | Drafting the labelling tool and the class guide, from the class rules in the team plan | `src/label_patch.py`, `docs/class_guide.md` (Nov 5) |
+| Claude Code | Help writing the labelling tool and class guide | `src/label_patch.py`, `docs/class_guide.md` (Nov 5) |
